@@ -754,7 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4913418239216544}
   m_Layer: 0
-  m_Name: lokers 1 1
+  m_Name: lokers 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
