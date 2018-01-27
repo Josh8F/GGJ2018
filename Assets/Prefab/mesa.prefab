@@ -100,6 +100,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4805974583140662}
+  - component: {fileID: 65934407924336920}
   m_Layer: 0
   m_Name: mesa
   m_TagString: Untagged
@@ -242,9 +243,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1445180334249414}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 12.103, y: 0.86, z: -10.93}
-  m_LocalScale: {x: 0.06640694, y: 0.06640694, z: 0.06640694}
+  m_LocalScale: {x: 0.06640697, y: 0.06640694, z: 0.06640697}
   m_Children:
   - {fileID: 4710484009875116}
   - {fileID: 4281693397640340}
@@ -457,3 +458,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1319173199768416}
   m_Mesh: {fileID: 4300008, guid: 163bcfc897a84e74493f8fa629baa372, type: 3}
+--- !u!65 &65934407924336920
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1445180334249414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 10, z: 50}
+  m_Center: {x: 0, y: -5, z: 0}
