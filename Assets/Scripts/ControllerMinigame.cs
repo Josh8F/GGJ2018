@@ -23,7 +23,7 @@ public class ControllerMinigame : MonoBehaviour {
 		}
 		activo = Mathf.Clamp(activo,0,3);
 		if(Input.GetKeyDown(KeyCode.Space)){
-			luces[activo].GetComponent<Light>().enabled = !luces[activo].GetComponent<Light>().enabled;
+			luces[activo].GetComponent<Light>().enabled = true;
 			clave += activo;
 		}
 		int encendidos = 0;
