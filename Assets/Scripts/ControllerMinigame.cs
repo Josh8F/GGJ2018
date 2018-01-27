@@ -43,6 +43,7 @@ public class ControllerMinigame : MonoBehaviour {
 				foreach(GameObject luz in luces){
 					luz.GetComponent<Light>().enabled = false;
 				}
+				clave = "";
 			}
 		}
 		transform.Translate(switches[activo].transform.position - transform.position);
