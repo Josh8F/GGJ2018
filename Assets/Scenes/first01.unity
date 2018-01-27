@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 463982421}
   - component: {fileID: 463982420}
   - component: {fileID: 463982419}
+  - component: {fileID: 463982422}
   m_Layer: 0
   m_Name: Dialogo_4
   m_TagString: Untagged
@@ -541,7 +542,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 463982418}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 5, z: 1}
@@ -559,6 +560,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &463982422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 463982418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  dialogNumToShow: 3
+  timeToDisappear: 10
+  lstDialogs:
+  - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
+    forma! \xA1Mi trabajo est\xE1 ido! Algo debi\xF3 haber pasado."
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026-dijo consternado, Ryan-\xBFPero qu\xE9
+    diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
 --- !u!1 &515191271
 GameObject:
   m_ObjectHideFlags: 0
@@ -787,6 +820,7 @@ GameObject:
   - component: {fileID: 579954381}
   - component: {fileID: 579954380}
   - component: {fileID: 579954379}
+  - component: {fileID: 579954382}
   m_Layer: 0
   m_Name: Dialogo_1
   m_TagString: Untagged
@@ -835,7 +869,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 579954378}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 5, z: 1}
@@ -853,6 +887,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &579954382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579954378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  dialogNumToShow: 0
+  timeToDisappear: 10
+  lstDialogs:
+  - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
+    forma! \xA1Mi trabajo est\xE1 ido! Algo debi\xF3 haber pasado."
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026-dijo consternado, Ryan-\xBFPero qu\xE9
+    diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
 --- !u!1 &593792443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1533,7 @@ GameObject:
   - component: {fileID: 798123441}
   - component: {fileID: 798123440}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: txtDialogs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1969,6 +2035,7 @@ GameObject:
   - component: {fileID: 1084598242}
   - component: {fileID: 1084598241}
   - component: {fileID: 1084598240}
+  - component: {fileID: 1084598243}
   m_Layer: 0
   m_Name: Dialogo_2
   m_TagString: Untagged
@@ -2017,7 +2084,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1084598239}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.59, y: 5, z: 1}
@@ -2035,6 +2102,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1084598243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1084598239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  dialogNumToShow: 1
+  timeToDisappear: 10
+  lstDialogs:
+  - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
+    forma! \xA1Mi trabajo est\xE1 ido! Algo debi\xF3 haber pasado."
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026-dijo consternado, Ryan-\xBFPero qu\xE9
+    diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
 --- !u!1 &1222473654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3175,6 +3274,7 @@ GameObject:
   - component: {fileID: 1741132073}
   - component: {fileID: 1741132072}
   - component: {fileID: 1741132071}
+  - component: {fileID: 1741132074}
   m_Layer: 0
   m_Name: Dialogo_5
   m_TagString: Untagged
@@ -3223,7 +3323,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741132070}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 5, z: 1}
@@ -3241,6 +3341,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741132074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1741132070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  dialogNumToShow: 4
+  timeToDisappear: 10
+  lstDialogs:
+  - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
+    forma! \xA1Mi trabajo est\xE1 ido! Algo debi\xF3 haber pasado."
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026-dijo consternado, Ryan-\xBFPero qu\xE9
+    diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
 --- !u!1 &1805087216
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,6 +3584,7 @@ GameObject:
   - component: {fileID: 2030339696}
   - component: {fileID: 2030339695}
   - component: {fileID: 2030339694}
+  - component: {fileID: 2030339697}
   m_Layer: 0
   m_Name: Dialogo_3
   m_TagString: Untagged
@@ -3500,7 +3633,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2030339693}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 5, z: 1}
@@ -3518,6 +3651,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2030339697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2030339693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  dialogNumToShow: 2
+  timeToDisappear: 10
+  lstDialogs:
+  - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
+    forma! \xA1Mi trabajo est\xE1 ido! Algo debi\xF3 haber pasado."
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026-dijo consternado, Ryan-\xBFPero qu\xE9
+    diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
 --- !u!1 &2101179638
 GameObject:
   m_ObjectHideFlags: 0
