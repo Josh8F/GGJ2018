@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Click : MonoBehaviour {
 
@@ -8,17 +9,19 @@ public class Click : MonoBehaviour {
 	RaycastHit hit;
 	public LayerMask interactuable;
 	public float distancia = 150;
-	int valor = 1;
+	public GameObject personaje;
+	NavMeshAgent agente;
+	
 	// Use this for initialization
 	void Start () {
-		
+		agente = personaje.GetComponent<NavMeshAgent>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable)){
 			if(Input.GetMouseButtonDown(0)){
-				Debug.Log("Interactuable" + ++valor);
+				agente.destination = hit.point;
 			}
 		}
 	}
