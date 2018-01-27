@@ -8,6 +8,7 @@ public class Click : MonoBehaviour {
 	RaycastHit hit;
 	public LayerMask interactuable;
 	public float distancia = 150;
+	int valor = 0;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,10 +16,12 @@ public class Click : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		interaccion = new Ray(transform.position, transform.forward);
-		if(Physics.Raycast(interaccion, out hit, interactuable)){
+		interaccion = new Ray(transform.position, Input.mousePosition);
+		Debug.Log(Input.mousePosition);
+		if(Physics.Raycast(interaccion, out hit, distancia, interactuable)){
 			if(Input.GetMouseButtonDown(0)){
 				
+				Debug.Log("Interactuable" + ++valor);
 			}
 		}
 	}
