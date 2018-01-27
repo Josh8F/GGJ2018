@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
                 if (_GameManager.getInteraction())
                 {
-                    _GameManager.ChangeScene("first01");
+                    _GameManager.ChangeScene("Mini");
                 }
             }
         }
