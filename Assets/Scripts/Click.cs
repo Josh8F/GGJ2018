@@ -21,7 +21,7 @@ public class Click : MonoBehaviour {
 	void Update () {
 		if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable)){
 			if(Input.GetMouseButtonDown(0)){
-				agente.destination = hit.point;
+				agente.SetDestination(hit.point);
 			}
 		}
 	}
