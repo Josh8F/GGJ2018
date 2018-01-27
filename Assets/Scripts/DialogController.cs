@@ -7,6 +7,7 @@ public class DialogController : MonoBehaviour
 {
 
     public Text txtDialog;
+    public GameObject imgObj;
     public int dialogNumToShow = 0;
     public int timeToDisappear = 0;
 
@@ -24,9 +25,11 @@ public class DialogController : MonoBehaviour
 
     public IEnumerator ShowDialog()
     {
+        imgObj.SetActive(!imgObj.activeInHierarchy);
         txtDialog.text = lstDialogs[dialogNumToShow];
         yield return new WaitForSeconds(timeToDisappear);
         txtDialog.text = "";
+		imgObj.SetActive(!imgObj.activeInHierarchy);
     }
 
     void OnTriggerEnter(Collider other)
