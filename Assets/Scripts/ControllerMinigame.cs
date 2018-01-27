@@ -1,16 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControllerMinigame : MonoBehaviour {
+   /*
+    
 
+    int counter = 30;
+     */
 	public GameObject[] switches;
 	public GameObject[] luces;
 	public int activo = 0;
 	string clave;
+	public Text txtTimer;
+    Coroutine crtCounter;
+	public int counter = 30;
 	// Use this for initialization
 	void Start () {
 		transform.position = new Vector3(switches[activo].transform.position.x,switches[activo].transform.position.y,transform.position.z);
+		crtCounter = StartCoroutine(crtCounterDown());
 	}
 	
 	// Update is called once per frame
@@ -48,4 +57,18 @@ public class ControllerMinigame : MonoBehaviour {
 		}
 		transform.Translate(switches[activo].transform.position - transform.position);
 	}
+	public IEnumerator crtCounterDown()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            counter--;
+            txtTimer.text = counter.ToString();
+            if (counter <= 0)
+            {
+                Debug.Log("Termino");
+				break;
+            }
+        }
+    }
 }
