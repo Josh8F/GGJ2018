@@ -33,8 +33,16 @@ public class ControllerMinigame : MonoBehaviour {
 			}
 		}
 		if(encendidos == 4){
-			if(clave == "1423"){
-				
+			if(clave.Equals("0312")){
+				foreach(GameObject luz in luces){
+					luz.GetComponent<Light>().enabled = true;
+				}
+				Debug.Log("Correcto");
+				this.GetComponent<ControllerMinigame>().enabled = false;
+			}else{
+				foreach(GameObject luz in luces){
+					luz.GetComponent<Light>().enabled = false;
+				}
 			}
 		}
 		transform.Translate(switches[activo].transform.position - transform.position);
