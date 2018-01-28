@@ -10,6 +10,7 @@ public class DialogController : MonoBehaviour
     public GameObject imgObj;
     public int dialogNumToShow = 0;
     public int timeToDisappear = 0;
+    public bool canAppear = true;
 
     public string[] lstDialogs = {
         "¡Demonios! ¡En empresas tan prominentes no se debería ir la luz de esta forma! ¡Mi trabajo está ido! Algo debió haber pasado.",
@@ -30,6 +31,7 @@ public class DialogController : MonoBehaviour
         yield return new WaitForSeconds(timeToDisappear);
         txtDialog.text = "";
 		imgObj.SetActive(!imgObj.activeInHierarchy);
+        canAppear = false;
     }
 
     void OnTriggerEnter(Collider other)

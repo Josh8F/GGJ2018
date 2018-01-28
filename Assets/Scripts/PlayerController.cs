@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
             }
             if (Input.GetKeyDown("space"))
             {
-
                 if (_GameManager.getInteraction())
                 {
                     _GameManager.ChangeScene("Mini");
