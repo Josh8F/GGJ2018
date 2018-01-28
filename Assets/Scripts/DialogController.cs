@@ -26,12 +26,15 @@ public class DialogController : MonoBehaviour
 
     public IEnumerator ShowDialog()
     {
-        imgObj.SetActive(!imgObj.activeInHierarchy);
-        txtDialog.text = lstDialogs[dialogNumToShow];
-        yield return new WaitForSeconds(timeToDisappear);
-        txtDialog.text = "";
-		imgObj.SetActive(!imgObj.activeInHierarchy);
-        canAppear = false;
+        if (canAppear)
+        {
+            imgObj.SetActive(true);
+            txtDialog.text = lstDialogs[dialogNumToShow];
+            yield return new WaitForSeconds(timeToDisappear);
+            txtDialog.text = "";
+            imgObj.SetActive(false);
+            canAppear = false;
+        }
     }
 
     void OnTriggerEnter(Collider other)

@@ -13,7 +13,7 @@ namespace UnityStandardAssets.Utility
 
         private void LateUpdate()
         {
-            transform.position = new Vector3(Mathf.Clamp(target.position.x + offset.x,minX,maxX), target.position.y + offset.y, Mathf.Clamp(target.position.z + offset.z,minZ,maxZ));
+            transform.position = new Vector3(Mathf.Clamp(target.position.x,minX,maxX), target.position.y , Mathf.Clamp(target.position.z,minZ,maxZ));
             
         }
     }
