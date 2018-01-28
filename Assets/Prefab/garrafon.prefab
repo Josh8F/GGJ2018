@@ -186,6 +186,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4988336736223164}
+  - component: {fileID: 65332145961288074}
   m_Layer: 0
   m_Name: garrafon
   m_TagString: Untagged
@@ -724,8 +725,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1407086046685138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -274.93414, y: 45.257107, z: 71.841415}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.79, y: -0.16, z: 13.47}
+  m_LocalScale: {x: 0.32280985, y: 0.32280982, z: 0.32280982}
   m_Children:
   - {fileID: 4714602688630452}
   - {fileID: 4674620907841654}
@@ -821,3 +822,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985625313281798}
   m_Mesh: {fileID: 4300004, guid: f7f511473e716984bbffd2d2f3e6884d, type: 3}
+--- !u!65 &65332145961288074
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407086046685138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.7, y: 10.04, z: 3.18}
+  m_Center: {x: 0, y: 3.11, z: -8.61}
