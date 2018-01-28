@@ -729,7 +729,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1380690370694142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.93, y: 1.23, z: 22.51}
+  m_LocalPosition: {x: 11.55, y: 1.23, z: -7.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4512581067575204}
@@ -1282,7 +1282,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   distancia: 150
-  velocidad: 7
+  velocidad: 4
   alturaAro: 0.1
   agente: {fileID: 0}
   aro: {fileID: 1044404366861182, guid: d5d8bf4da70de7845992af93e7b22486, type: 2}

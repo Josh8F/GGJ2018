@@ -438,6 +438,8 @@ GameObject:
   m_Component:
   - component: {fileID: 140905610}
   - component: {fileID: 140905609}
+  - component: {fileID: 140905611}
+  - component: {fileID: 140905612}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -459,6 +461,10 @@ MonoBehaviour:
   _PlayerController: {fileID: 515191278}
   btnSpace: {fileID: 1934307088}
   canInteract: 0
+  audioSource: {fileID: 140905611}
+  audioSourceOneShot: {fileID: 140905612}
+  ac_MainSong: {fileID: 8300000, guid: 3e0532d1ad689264093c5491eb322938, type: 3}
+  ac_LevelSong: {fileID: 8300000, guid: 5eee6c2f693a3884caee756daf19203c, type: 3}
 --- !u!4 &140905610
 Transform:
   m_ObjectHideFlags: 0
@@ -472,6 +478,166 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &140905611
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 140905608}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 3e0532d1ad689264093c5491eb322938, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!82 &140905612
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 140905608}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &150918018
 Prefab:
   m_ObjectHideFlags: 0
@@ -1579,7 +1745,7 @@ MonoBehaviour:
   txtDialog: {fileID: 798123440}
   imgObj: {fileID: 1789059456}
   dialogNumToShow: 3
-  timeToDisappear: 10
+  timeToDisappear: 5
   canAppear: 1
   lstDialogs:
   - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
@@ -1611,145 +1777,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemToActive: {fileID: 1811137746}
---- !u!1 &515191271
-GameObject:
+--- !u!1001 &512453452
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 515191276}
-  - component: {fileID: 515191274}
-  - component: {fileID: 515191273}
-  - component: {fileID: 515191272}
-  - component: {fileID: 515191277}
-  - component: {fileID: 515191278}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &515191272
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515191271}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!23 &515191273
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515191271}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!136 &515191274
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515191271}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &515191276
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7e6dc1dc37d0533419793f36c5b78d27, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &515191276 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515191271}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.93, y: 1.23, z: 22.51}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1246441498}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!195 &515191277
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515191271}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &515191278
+  m_PrefabParentObject: {fileID: 4290215284216846, guid: 7e6dc1dc37d0533419793f36c5b78d27,
+    type: 2}
+  m_PrefabInternal: {fileID: 512453452}
+--- !u!114 &515191278 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 515191271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114561396474880876, guid: 7e6dc1dc37d0533419793f36c5b78d27,
+    type: 2}
+  m_PrefabInternal: {fileID: 512453452}
   m_Script: {fileID: 11500000, guid: 62f47910e1a099248a818ee763c61b67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactuable:
-    serializedVersion: 2
-    m_Bits: 256
-  distancia: 150
-  velocidad: 7
-  alturaAro: 0.1
-  agente: {fileID: 0}
-  aro: {fileID: 1044404366861182, guid: d5d8bf4da70de7845992af93e7b22486, type: 2}
-  _GameManager: {fileID: 0}
-  canMove: 0
-  animator: {fileID: 1246441499}
 --- !u!1 &522289145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,7 +2059,7 @@ MonoBehaviour:
   txtDialog: {fileID: 798123440}
   imgObj: {fileID: 1789059456}
   dialogNumToShow: 0
-  timeToDisappear: 10
+  timeToDisappear: 5
   canAppear: 1
   lstDialogs:
   - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
@@ -3219,6 +3299,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 140905609}
+        m_MethodName: PlaySong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 5eee6c2f693a3884caee756daf19203c,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &790534678
@@ -3422,6 +3514,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1609870343}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 140905609}
+        m_MethodName: PlayUISong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 929bc8f13f6d4fa478d54f9ff6caca6e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4020,6 +4124,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 140905609}
+        m_MethodName: PlayUISong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 929bc8f13f6d4fa478d54f9ff6caca6e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 140905609}
         m_MethodName: PauseGame
         m_Mode: 1
         m_Arguments:
@@ -4225,7 +4341,7 @@ MonoBehaviour:
   txtDialog: {fileID: 798123440}
   imgObj: {fileID: 1789059456}
   dialogNumToShow: 1
-  timeToDisappear: 10
+  timeToDisappear: 5
   canAppear: 1
   lstDialogs:
   - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
@@ -4565,6 +4681,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 140905609}
+        m_MethodName: PlayUISong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 929bc8f13f6d4fa478d54f9ff6caca6e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1222473657
@@ -4655,15 +4783,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4038499730052492, guid: 42c2b7b4bd0fe024bbcc3b0e5bab8c0a,
     type: 2}
   m_PrefabInternal: {fileID: 1236092070}
---- !u!4 &1246441498 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-  m_PrefabInternal: {fileID: 1597089875}
---- !u!95 &1246441499 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9500000, guid: 15126ca7162953a46b07aa7053434008,
-    type: 3}
-  m_PrefabInternal: {fileID: 1597089875}
 --- !u!4 &1281373211 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4541427406657958, guid: d645fcb4b19adaa4da1d7afcea85daaf,
@@ -4763,6 +4882,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 677845861}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 140905609}
+        m_MethodName: PlayUISong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 929bc8f13f6d4fa478d54f9ff6caca6e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5971,6 +6102,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 140905609}
+        m_MethodName: PlayUISong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 929bc8f13f6d4fa478d54f9ff6caca6e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 140905609}
         m_MethodName: ControlPanel
         m_Mode: 2
         m_Arguments:
@@ -6259,52 +6402,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65fee6d42122c9f41b810f616cb137f9, type: 3}
-  m_IsPrefabParent: 0
---- !u!1001 &1597089875
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 515191276}
-    m_Modifications:
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400074, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9500000, guid: 15126ca7162953a46b07aa7053434008, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 85a3bb26a357c3c44869fdd8eebe3602, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 15126ca7162953a46b07aa7053434008, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1601688225
 GameObject:
@@ -6817,7 +6914,7 @@ MonoBehaviour:
   txtDialog: {fileID: 798123440}
   imgObj: {fileID: 1789059456}
   dialogNumToShow: 4
-  timeToDisappear: 10
+  timeToDisappear: 5
   canAppear: 1
   lstDialogs:
   - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
@@ -7129,6 +7226,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1451800037}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 140905609}
+        m_MethodName: PlayUISong
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 929bc8f13f6d4fa478d54f9ff6caca6e,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7842,7 +7951,7 @@ MonoBehaviour:
   txtDialog: {fileID: 798123440}
   imgObj: {fileID: 1789059456}
   dialogNumToShow: 2
-  timeToDisappear: 10
+  timeToDisappear: 5
   canAppear: 1
   lstDialogs:
   - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
