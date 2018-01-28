@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
                     if (_GameManager.getInteraction())
                     {
                         animator.SetBool("pickup", true);
-                        //_GameManager.ChangeScene("Mini");
+                        _GameManager.ChangeScene("Mini");
 
                     }
                 }

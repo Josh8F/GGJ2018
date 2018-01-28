@@ -64,4 +64,8 @@ public class GameManager : MonoBehaviour
     {
         audioSourceOneShot.PlayOneShot(ac);
     }
+    public void SceneChange(string scene)
+    {
+        SceneManager.LoadScene(scene);
+    }
 }
