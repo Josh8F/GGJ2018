@@ -5,14 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.Rendering;
 
 public class ControllerMinigame : MonoBehaviour {
-   /*
-    
-
-    int counter = 30;
-     */
+   
 	public GameObject[] switches;
 	public GameObject[] luces;
-	public Material[] materiales;
+	public GameObject[] botones;
+
 	Material prueba;
 	public int activo = 0;
 	string clave;
@@ -23,21 +20,33 @@ public class ControllerMinigame : MonoBehaviour {
 	void Start () {
 		transform.position = new Vector3(switches[activo].transform.position.x,switches[activo].transform.position.y,transform.position.z);
 		crtCounter = StartCoroutine(crtCounterDown());
-		foreach (GameObject interruptor in switches){
-			Debug.Log(interruptor.GetComponent<Texture>().name);
+		int valor = 0;
+		Instantiate(botones[1], switches[valor].transform.position + Vector3.forward*-0.1f, switches[valor].transform.rotation).name = "On" + valor;
+		for(valor = 1; valor < 4; valor++){
+			Instantiate(botones[0], switches[valor].transform.position + Vector3.forward*-0.1f, switches[valor].transform.rotation).name = "Off" + valor;
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.RightArrow)){
+			Destroy(GameObject.Find("On"+activo));
+			Instantiate(botones[0], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "Off"+activo;
 			activo++;
+			activo = Mathf.Clamp(activo,0,3);
+			Destroy(GameObject.Find("Off"+activo));
+			Instantiate(botones[1], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "On" + activo;
 		}
 		if(Input.GetKeyDown(KeyCode.LeftArrow)){
+			Destroy(GameObject.Find("On"+activo));
+			Instantiate(botones[0], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "Off"+activo;
 			activo--;
+			activo = Mathf.Clamp(activo,0,3);
+			Destroy(GameObject.Find("Off"+activo));
+			Instantiate(botones[1], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "On" + activo;
 		}
 		
-		activo = Mathf.Clamp(activo,0,3);
+		
 		if(Input.GetKeyDown(KeyCode.Space)){
 			luces[activo].GetComponent<Light>().enabled = true;
 			clave += activo;
