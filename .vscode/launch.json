@@ -1,12 +1,13 @@
 {
 	"version":"0.2.0",
 	"configurations":[ 
+		
 		{
 			"name":"Unity",
 			"type":"mono",
 			"request":"attach",
 			"address":"localhost",
-			"port":9040
+			"port":9940
 		}
 	]
 }
