@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ff969a8388dd52147a3b6f29f6e53952
+=======
+guid: a19eb9ae9940c264981443019bbc7b59
+timeCreated: 1517151858
+licenseType: Pro
+>>>>>>> b38711622e061c7f453e433ffe27c8ff1c8be52e
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -83,11 +89,47 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
+<<<<<<< HEAD
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
+=======
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+>>>>>>> b38711622e061c7f453e433ffe27c8ff1c8be52e
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -106,7 +148,11 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+<<<<<<< HEAD
     useFileScale: 1
+=======
+    useFileScale: 0
+>>>>>>> b38711622e061c7f453e433ffe27c8ff1c8be52e
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

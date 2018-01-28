@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5dc069cbf9d83594ba6e66745f7e1154
+=======
+guid: 181b8ed0a1994d84aa36c13b704b7f0b
+timeCreated: 1517151854
+licenseType: Pro
+>>>>>>> b38711622e061c7f453e433ffe27c8ff1c8be52e
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -87,7 +93,11 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
+<<<<<<< HEAD
     globalScale: 1
+=======
+    globalScale: 0.2
+>>>>>>> b38711622e061c7f453e433ffe27c8ff1c8be52e
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -106,7 +116,11 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+<<<<<<< HEAD
     useFileScale: 1
+=======
+    useFileScale: 0
+>>>>>>> b38711622e061c7f453e433ffe27c8ff1c8be52e
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
