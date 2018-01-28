@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class ControllerMinigame : MonoBehaviour {
    /*
@@ -11,6 +12,8 @@ public class ControllerMinigame : MonoBehaviour {
      */
 	public GameObject[] switches;
 	public GameObject[] luces;
+	public Material[] materiales;
+	Material prueba;
 	public int activo = 0;
 	string clave;
 	public Text txtTimer;
@@ -20,6 +23,9 @@ public class ControllerMinigame : MonoBehaviour {
 	void Start () {
 		transform.position = new Vector3(switches[activo].transform.position.x,switches[activo].transform.position.y,transform.position.z);
 		crtCounter = StartCoroutine(crtCounterDown());
+		foreach (GameObject interruptor in switches){
+			Debug.Log(interruptor.GetComponent<Texture>().name);
+		}
 	}
 	
 	// Update is called once per frame
@@ -30,6 +36,7 @@ public class ControllerMinigame : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.LeftArrow)){
 			activo--;
 		}
+		
 		activo = Mathf.Clamp(activo,0,3);
 		if(Input.GetKeyDown(KeyCode.Space)){
 			luces[activo].GetComponent<Light>().enabled = true;
