@@ -34,6 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4038499730052492}
+  - component: {fileID: 65099748077019680}
   m_Layer: 0
   m_Name: silla
   m_TagString: Untagged
@@ -419,7 +420,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1122452715587758}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11.674, y: -0.724, z: 8.107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4144595694886762}
@@ -1007,3 +1008,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570772406315548}
   m_Mesh: {fileID: 4300006, guid: 930d7cf4a495ad149afcd21b8a85506a, type: 3}
+--- !u!65 &65099748077019680
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1122452715587758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.72, y: 1, z: 1}
+  m_Center: {x: 6.97, y: 1.33, z: 6.38}
