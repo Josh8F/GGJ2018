@@ -9,6 +9,8 @@ public class ControllerMinigame : MonoBehaviour {
 	public GameObject[] switches;
 	public GameObject[] luces;
 	public GameObject[] botones;
+	public GameObject manager;
+	GameManagerMini opcionesManager;
 
 	Material prueba;
 	public int activo = 0;
@@ -20,6 +22,7 @@ public class ControllerMinigame : MonoBehaviour {
 	int valor = 0;
 	// Use this for initialization
 	void Start () {
+		opcionesManager = manager.GetComponent<GameManagerMini>();
 		transform.position = new Vector3(switches[activo].transform.position.x,switches[activo].transform.position.y,transform.position.z);
 		crtCounter = StartCoroutine(crtCounterDown());
 		Instantiate(botones[1], switches[valor].transform.position + Vector3.forward*-0.1f, switches[valor].transform.rotation).name = "On" + valor;
@@ -81,6 +84,9 @@ public class ControllerMinigame : MonoBehaviour {
 		foreach(GameObject luz in luces){
 			luz.GetComponent<Light>().enabled = valor;
 		}
+		if(valor){
+			opcionesManager.WinGame();
+		}
 		this.GetComponent<ControllerMinigame>().enabled = !valor;
 	}
 	public IEnumerator crtCounterDown()
@@ -92,7 +98,7 @@ public class ControllerMinigame : MonoBehaviour {
             txtTimer.text = counter.ToString();
             if (counter <= 0)
             {
-                Debug.Log("Termino");
+                opcionesManager.EndGame();
 				break;
             }
         }

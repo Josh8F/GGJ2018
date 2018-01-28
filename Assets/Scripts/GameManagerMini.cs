@@ -8,6 +8,14 @@ public class GameManagerMini : MonoBehaviour
 {
     //public PlayerController _PlayerController;
     public GameObject _PlayerController;
+    public Image inicio;
+    public GameObject final;
+    public Text textoFinal;
+    public GameObject mensaje;
+
+    Coroutine crt;
+    int i = 0;
+    string[] letras = {"E","R","E","S", " ", "U","N"," ","B","U","E","N"," ", "A", "M", "I","G","O","."};
 
     //public GameObject btnSpace;
     //public bool canInteract = false;
@@ -34,16 +42,31 @@ public class GameManagerMini : MonoBehaviour
     }
 
     public void StartGame()
-    {
-        _PlayerController.GetComponent<ControllerMinigame>().enabled = true;
+    {   
+        inicio.enabled = false;
+        _PlayerController.GetComponent<ControllerMinigame>().enabled = true;       
     }
 
-    public void PauseGame()
+    public void EndGame()
     {
-        Time.timeScale = 0;
+        final.SetActive(true);
     }
-    public void ResumeGame()
-    {
-        Time.timeScale = 1;
+    public void WinGame()
+    {   
+        mensaje.SetActive(true);
+        crt = StartCoroutine(escribir());
+    }
+
+    public IEnumerator escribir(){
+        while(true){
+            if(i < letras.Length){
+                textoFinal.text += letras[i];
+                i++;
+                yield return new WaitForSeconds(0.2f);
+            }else{
+                yield return new WaitForSeconds(2f);
+                ChangeScene("credits");
+            }
+        }
     }
 }
