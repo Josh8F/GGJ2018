@@ -49,7 +49,11 @@ public class ControllerMinigame : MonoBehaviour {
 		
 		if(Input.GetKeyDown(KeyCode.Space)){
 			luces[activo].GetComponent<Light>().enabled = true;
-			clave += activo;
+			foreach(char texto in clave.ToCharArray()){
+				if(!texto.Equals(clave)){
+					clave+= activo;
+				}
+			}
 		}
 		int encendidos = 0;
 		foreach(GameObject luz in luces){
