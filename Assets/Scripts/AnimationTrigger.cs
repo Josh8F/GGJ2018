@@ -11,10 +11,7 @@ public class AnimationTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-
             other.gameObject.GetComponentInChildren<Animator>().SetBool(animationToPlay, true);
-
-
         }
     }
     void OnTriggerExit(Collider other)
