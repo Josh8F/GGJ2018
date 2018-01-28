@@ -14,19 +14,29 @@ public class PlayerController : MonoBehaviour
 
     public GameManager _GameManager;
     public bool canMove = false;
+
+    public Animator animator;
+
     void Start()
     {
         _GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         agente = gameObject.GetComponent<NavMeshAgent>();
+
     }
     void Update()
     {
         if (canMove)
         {
+            if (Vector3.Distance(transform.position, agente.destination) <= 1f)
+            {
+                animator.SetBool("walk", false);
+            }
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable))
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    animator.SetBool("walk", true);
+                    
                     agente.speed = velocidad;
                     agente.SetDestination(hit.point);
                 }
@@ -35,7 +45,9 @@ public class PlayerController : MonoBehaviour
             {
                 if (_GameManager.getInteraction())
                 {
-                    _GameManager.ChangeScene("Mini");
+                    animator.SetBool("pickup", true);
+                    //_GameManager.ChangeScene("Mini");
+
                 }
             }
         }

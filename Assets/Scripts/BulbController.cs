@@ -17,18 +17,14 @@ public class BulbController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.3f);
-            light.SetActive(true);
-            yield return new WaitForSeconds(0.3f);
-            light.SetActive(false);
-            yield return new WaitForSeconds(0.3f);
-            light.SetActive(true);
-            yield return new WaitForSeconds(0.3f);
-            light.SetActive(false);
-            yield return new WaitForSeconds(0.3f);
-            light.SetActive(true);
-            yield return new WaitForSeconds(0.3f);
-            light.SetActive(false);
+            for (int i = 0; i < 3; i++)
+            {
+                yield return new WaitForSeconds(0.3f);
+                light.SetActive(true);
+                yield return new WaitForSeconds(0.3f);
+                light.SetActive(false);
+
+            }
             yield return new WaitForSeconds(2f);
         }
     }
