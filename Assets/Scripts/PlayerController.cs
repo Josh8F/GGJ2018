@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     RaycastHit hit;
     public LayerMask interactuable;
     public float distancia = 150;
+    public float velocidad = 10f;
     public NavMeshAgent agente;
 
     public GameManager _GameManager;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(0))
                 {
+                    agente.speed = velocidad;
                     agente.SetDestination(hit.point);
                 }
             }
