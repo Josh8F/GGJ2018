@@ -152,7 +152,32 @@ ModelImporter:
     4300006: polySurface33
     4300008: pCube37
     4300010: polySurface31
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: camisa
+    second: {fileID: 2100000, guid: d8f7d8c6537faae408a818f0545decca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cinturon
+    second: {fileID: 2100000, guid: eecd96aa2652dac41931b5f804f3ffcc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3a08d0a8c533ad449be9d52018e7fd94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pantalon
+    second: {fileID: 2100000, guid: f6c109fd832f745488fe32ed7d6a01fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piel
+    second: {fileID: 2100000, guid: d05282c616027f6468ea444b9653573d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

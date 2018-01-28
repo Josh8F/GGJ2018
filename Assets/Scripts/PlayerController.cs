@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
                         agente.SetDestination(hit.point);
                     }
                     animator.SetBool("walk", true);
-                    
+
                     agente.speed = velocidad;
                     agente.SetDestination(hit.point);
                 }
@@ -61,9 +61,10 @@ public class PlayerController : MonoBehaviour
                         //_GameManager.ChangeScene("Mini");
 
                     }
+                }
+                if (Input.GetKeyUp("space"))
+                {
                     animator.SetBool("pickup", true);
-                    //_GameManager.ChangeScene("Mini");
-
                 }
             }
 
