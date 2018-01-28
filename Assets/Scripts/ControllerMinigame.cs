@@ -57,7 +57,6 @@ public class ControllerMinigame : MonoBehaviour {
 			}
 			if(!x){
 				clave[valor++] = activo;
-				Debug.Log("f");
 			}
 		}
 		int encendidos = 0;
