@@ -10,6 +10,7 @@ public class Click : MonoBehaviour {
 	public LayerMask interactuable;
 	public float distancia = 150;
 	public GameObject personaje;
+	public GameObject aro;
 	NavMeshAgent agente;
 	
 	// Use this for initialization
@@ -21,6 +22,7 @@ public class Click : MonoBehaviour {
 	void Update () {
 		if(Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable)){
 			if(Input.GetMouseButtonDown(0)){
+				Instantiate(aro, hit.point, Quaternion.identity);
 				agente.SetDestination(hit.point);
 			}
 		}

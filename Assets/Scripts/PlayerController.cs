@@ -10,36 +10,54 @@ public class PlayerController : MonoBehaviour
     public LayerMask interactuable;
     public float distancia = 150;
     public float velocidad = 10f;
+    public float alturaAro;
     public NavMeshAgent agente;
-
+    public GameObject aro;
     public GameManager _GameManager;
     public bool canMove = false;
+    Quaternion rotacion;
+
+
+    public Animator animator;
     void Start()
     {
         _GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         agente = gameObject.GetComponent<NavMeshAgent>();
+        rotacion.eulerAngles = new Vector3(90f, 0f, 0f);
+
     }
     void Update()
     {
         if (canMove)
         {
+            if (Vector3.Distance(transform.position, agente.destination) <= 1f)
+            {
+                animator.SetBool("walk", false);
+            }
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable))
             {
                 if (Input.GetMouseButtonDown(0))
                 {
-                    agente.speed = velocidad;
-                    agente.SetDestination(hit.point);
+                    Instantiate(aro, hit.point + Vector3.up * alturaAro, rotacion);
+
+                    {
+                        animator.SetBool("walk", true);
+
+                        agente.speed = velocidad;
+                        agente.SetDestination(hit.point);
+                    }
                 }
-            }
-            if (Input.GetKeyDown("space"))
-            {
-                if (_GameManager.getInteraction())
+                if (Input.GetKeyDown("space"))
                 {
-                    _GameManager.ChangeScene("Mini");
+                    if (_GameManager.getInteraction())
+                    {
+                        animator.SetBool("pickup", true);
+                        //_GameManager.ChangeScene("Mini");
+
+                    }
                 }
             }
+
         }
-
     }
-
 }

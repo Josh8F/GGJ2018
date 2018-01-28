@@ -1,70 +1,62 @@
 fileFormatVersion: 2
-guid: 84e0ec52b1ec3254bb75962dcd9efed6
-timeCreated: 1517083886
-licenseType: Pro
+guid: 22f9c09ab588ff849ac7580ada156a05
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCylinder1
-    100004: pCylinder2
-    100006: pCylinder3
-    100008: polySurface1
-    100010: polySurface2
-    100012: polySurface2 1
-    100014: polySurface3
-    100016: polySurface4
-    100018: polySurface4 1
-    100020: pSphere1
-    100022: pSphere2
-    100024: transform10
-    100026: transform11
-    100028: transform12
-    100030: transform31
-    100032: transform32
-    100034: transform5
-    100036: transform6
-    100038: transform7
-    100040: transform8
-    100042: transform9
-    100044: polySurface10
-    100046: polySurface9
-    100048: transform51
-    400000: //RootNode
-    400002: pCylinder1
-    400004: pCylinder2
-    400006: pCylinder3
-    400008: polySurface1
-    400010: polySurface2
-    400012: polySurface2 1
-    400014: polySurface3
-    400016: polySurface4
-    400018: polySurface4 1
-    400020: pSphere1
-    400022: pSphere2
-    400024: transform10
-    400026: transform11
-    400028: transform12
-    400030: transform31
-    400032: transform32
-    400034: transform5
-    400036: transform6
-    400038: transform7
-    400040: transform8
-    400042: transform9
-    400044: polySurface10
-    400046: polySurface9
-    400048: transform51
-    2100000: lambert1
-    2300000: polySurface4
-    2300002: polySurface10
-    2300004: polySurface9
-    3300000: polySurface4
-    3300002: polySurface10
-    3300004: polySurface9
-    4300000: polySurface4
-    4300002: polySurface9
-    4300004: polySurface10
+    100000: mixamorig:Head
+    100002: mixamorig:HeadTop_End
+    100004: mixamorig:Hips
+    100006: mixamorig:LeftArm
+    100008: mixamorig:LeftFoot
+    100010: mixamorig:LeftForeArm
+    100012: mixamorig:LeftHand
+    100014: mixamorig:LeftLeg
+    100016: mixamorig:LeftShoulder
+    100018: mixamorig:LeftToe_End
+    100020: mixamorig:LeftToeBase
+    100022: mixamorig:LeftUpLeg
+    100024: mixamorig:Neck
+    100026: mixamorig:RightArm
+    100028: mixamorig:RightFoot
+    100030: mixamorig:RightForeArm
+    100032: mixamorig:RightHand
+    100034: mixamorig:RightLeg
+    100036: mixamorig:RightShoulder
+    100038: mixamorig:RightToe_End
+    100040: mixamorig:RightToeBase
+    100042: mixamorig:RightUpLeg
+    100044: mixamorig:Spine
+    100046: mixamorig:Spine1
+    100048: mixamorig:Spine2
+    100050: //RootNode
+    400000: mixamorig:Head
+    400002: mixamorig:HeadTop_End
+    400004: mixamorig:Hips
+    400006: mixamorig:LeftArm
+    400008: mixamorig:LeftFoot
+    400010: mixamorig:LeftForeArm
+    400012: mixamorig:LeftHand
+    400014: mixamorig:LeftLeg
+    400016: mixamorig:LeftShoulder
+    400018: mixamorig:LeftToe_End
+    400020: mixamorig:LeftToeBase
+    400022: mixamorig:LeftUpLeg
+    400024: mixamorig:Neck
+    400026: mixamorig:RightArm
+    400028: mixamorig:RightFoot
+    400030: mixamorig:RightForeArm
+    400032: mixamorig:RightHand
+    400034: mixamorig:RightLeg
+    400036: mixamorig:RightShoulder
+    400038: mixamorig:RightToe_End
+    400040: mixamorig:RightToeBase
+    400042: mixamorig:RightUpLeg
+    400044: mixamorig:Spine
+    400046: mixamorig:Spine1
+    400048: mixamorig:Spine2
+    400050: //RootNode
+    7400000: mixamo.com
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -98,12 +90,12 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
-    swapUVChannels: 1
-    generateSecondaryUV: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -114,7 +106,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -139,7 +131,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

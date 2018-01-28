@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1650,8 +1650,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   distancia: 150
-  velocidad: 10
+  velocidad: 7
+  alturaAro: 0.1
   agente: {fileID: 0}
+  aro: {fileID: 1044404366861182, guid: d5d8bf4da70de7845992af93e7b22486, type: 2}
   _GameManager: {fileID: 0}
   canMove: 0
 --- !u!1 &522289145
@@ -7686,6 +7688,7 @@ MonoBehaviour:
     m_Bits: 256
   distancia: 150
   personaje: {fileID: 515191271}
+  aro: {fileID: 0}
 --- !u!114 &2102802438
 MonoBehaviour:
   m_ObjectHideFlags: 0
