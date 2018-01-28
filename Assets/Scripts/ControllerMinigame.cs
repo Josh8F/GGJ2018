@@ -12,19 +12,21 @@ public class ControllerMinigame : MonoBehaviour {
 
 	Material prueba;
 	public int activo = 0;
-	string clave;
+	int[] clave = {-1,-1,-1,-1};
+	int[] pass = {0,3,1,2};
 	public Text txtTimer;
     Coroutine crtCounter;
 	public int counter = 30;
+	int valor = 0;
 	// Use this for initialization
 	void Start () {
 		transform.position = new Vector3(switches[activo].transform.position.x,switches[activo].transform.position.y,transform.position.z);
 		crtCounter = StartCoroutine(crtCounterDown());
-		int valor = 0;
 		Instantiate(botones[1], switches[valor].transform.position + Vector3.forward*-0.1f, switches[valor].transform.rotation).name = "On" + valor;
 		for(valor = 1; valor < 4; valor++){
 			Instantiate(botones[0], switches[valor].transform.position + Vector3.forward*-0.1f, switches[valor].transform.rotation).name = "Off" + valor;
 		}
+		valor = 0;
 	}
 	
 	// Update is called once per frame
@@ -42,17 +44,20 @@ public class ControllerMinigame : MonoBehaviour {
 			Instantiate(botones[0], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "Off"+activo;
 			activo--;
 			activo = Mathf.Clamp(activo,0,3);
-			Destroy(GameObject.Find("Off"+activo));
+			Destroy(GameObject.Find("Off" + activo));
 			Instantiate(botones[1], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "On" + activo;
 		}
 		
 		
 		if(Input.GetKeyDown(KeyCode.Space)){
 			luces[activo].GetComponent<Light>().enabled = true;
-			foreach(char texto in clave.ToCharArray()){
-				if(!texto.Equals(clave)){
-					clave+= activo;
-				}
+			bool x = false;
+			foreach(int i in clave){
+				x = (i == activo)?true:x;
+			}
+			if(!x){
+				clave[valor++] = activo;
+				Debug.Log("f");
 			}
 		}
 		int encendidos = 0;
@@ -62,20 +67,22 @@ public class ControllerMinigame : MonoBehaviour {
 			}
 		}
 		if(encendidos == 4){
-			if(clave.Equals("0312")){
-				foreach(GameObject luz in luces){
-					luz.GetComponent<Light>().enabled = true;
+			bool prueba = true;
+			for(int i = 0; i < 4; i++){
+				if(clave[i] != pass[i]){
+					prueba = false;
 				}
-				Debug.Log("Correcto");
-				this.GetComponent<ControllerMinigame>().enabled = false;
-			}else{
-				foreach(GameObject luz in luces){
-					luz.GetComponent<Light>().enabled = false;
-				}
-				clave = "";
 			}
+			claves(prueba);
 		}
 		transform.Translate(switches[activo].transform.position - transform.position);
+	}
+	
+	public void claves(bool valor){
+		foreach(GameObject luz in luces){
+			luz.GetComponent<Light>().enabled = valor;
+		}
+		this.GetComponent<ControllerMinigame>().enabled = !valor;
 	}
 	public IEnumerator crtCounterDown()
     {
