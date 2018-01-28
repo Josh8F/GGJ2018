@@ -6,12 +6,21 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     public PlayerController _PlayerController;
 
     public GameObject btnSpace;
     public bool canInteract = false;
 
+    public AudioSource audioSource;
+    public AudioSource audioSourceOneShot;
+    public AudioClip ac_MainSong, ac_LevelSong;
 
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void ControlPanel(GameObject obj)
     {
         obj.SetActive(!obj.activeInHierarchy);
@@ -44,5 +53,15 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
+    }
+
+    public void PlaySong(AudioClip ac)
+    {
+        audioSource.clip = ac;
+        audioSource.Play();
+    }
+    public void PlayUISong(AudioClip ac)
+    {
+        audioSourceOneShot.PlayOneShot(ac);
     }
 }
