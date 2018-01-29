@@ -80,14 +80,19 @@ public class ControllerMinigame : MonoBehaviour {
 		transform.Translate(switches[activo].transform.position - transform.position);
 	}
 	
-	public void claves(bool valor){
+	public void claves(bool valort){
 		foreach(GameObject luz in luces){
-			luz.GetComponent<Light>().enabled = valor;
+			luz.GetComponent<Light>().enabled = valort;
 		}
-		if(valor){
+		if(valort){
 			opcionesManager.WinGame();
+		}else{
+			for(int i = 0; i < 4; i++){
+				clave[i]= -1;
+			}
+			valor = 0;
 		}
-		this.GetComponent<ControllerMinigame>().enabled = !valor;
+		this.GetComponent<ControllerMinigame>().enabled = !valort;
 	}
 	public IEnumerator crtCounterDown()
     {
