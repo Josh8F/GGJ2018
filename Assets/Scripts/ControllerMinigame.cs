@@ -10,12 +10,13 @@ public class ControllerMinigame : MonoBehaviour {
 	public GameObject[] luces;
 	public GameObject[] botones;
 	public GameObject manager;
+	public Color[] colores;
 	GameManagerMini opcionesManager;
 
 	Material prueba;
 	public int activo = 0;
 	int[] clave = {-1,-1,-1,-1};
-	int[] pass = {0,3,1,2};
+	int[] pass = {3,1,0,2};
 	public Text txtTimer;
     Coroutine crtCounter;
 	public int counter = 30;
@@ -106,6 +107,14 @@ public class ControllerMinigame : MonoBehaviour {
                 opcionesManager.EndGame();
 				break;
             }
+			switch(counter){
+				case 19:
+					txtTimer.color = colores[1];
+					break;
+				case 9:
+					txtTimer.color = colores[2];
+					break;
+			}
         }
     }
 }
