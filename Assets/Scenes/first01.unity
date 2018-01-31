@@ -8567,7 +8567,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741132070}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.589336, y: -1.5749218, z: -3.52}
+  m_LocalPosition: {x: -4.589336, y: -1.5749218, z: -1.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497805250}
@@ -8630,7 +8630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a27b860adbfc9743a6560a6022acad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationToPlay: surprised
+  animationToPlay: pickup
 --- !u!1 &1770347581
 GameObject:
   m_ObjectHideFlags: 0
