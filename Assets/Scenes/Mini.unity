@@ -435,11 +435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afbe789186886074095d1a54134db984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlayerController: {fileID: 1938798694}
-  inicio: {fileID: 1699171607}
-  final: {fileID: 354899689}
-  textoFinal: {fileID: 1505327370}
-  mensaje: {fileID: 624703952}
 --- !u!4 &326912116
 Transform:
   m_ObjectHideFlags: 0
@@ -749,7 +744,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 1b90684a7e44f7d43923ca45713a738b, type: 2}
+  - {fileID: 2100000, guid: a9250fea31198ed468d7f90b55869ff1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2375,8 +2370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604c3edf48ce4964487b968df48dce17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameManager: {fileID: 326912114}
-  activo: 0
 --- !u!1 &2019805820
 GameObject:
   m_ObjectHideFlags: 0
