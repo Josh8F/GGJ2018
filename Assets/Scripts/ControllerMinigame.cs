@@ -32,24 +32,16 @@ public class ControllerMinigame : MonoBehaviour {
 		}
 		valor = 0;
 	}
+
+	
 	
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.RightArrow)){
-			Destroy(GameObject.Find("On"+activo));
-			Instantiate(botones[0], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "Off"+activo;
-			activo++;
-			activo = Mathf.Clamp(activo,0,3);
-			Destroy(GameObject.Find("Off"+activo));
-			Instantiate(botones[1], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "On" + activo;
+			cambioSwitch(1);
 		}
 		if(Input.GetKeyDown(KeyCode.LeftArrow)){
-			Destroy(GameObject.Find("On"+activo));
-			Instantiate(botones[0], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "Off"+activo;
-			activo--;
-			activo = Mathf.Clamp(activo,0,3);
-			Destroy(GameObject.Find("Off" + activo));
-			Instantiate(botones[1], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "On" + activo;
+			cambioSwitch(-1);
 		}
 		
 		
@@ -94,6 +86,15 @@ public class ControllerMinigame : MonoBehaviour {
 			valor = 0;
 		}
 		this.GetComponent<ControllerMinigame>().enabled = !valort;
+	}
+
+	void cambioSwitch(int suma){
+		Destroy(GameObject.Find("On"+activo));
+			Instantiate(botones[0], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "Off"+activo;
+			activo+= suma;
+			activo = Mathf.Clamp(activo,0,3);
+			Destroy(GameObject.Find("Off"+activo));
+			Instantiate(botones[1], switches[activo].transform.position + Vector3.forward*-0.1f, switches[activo].transform.rotation).name = "On" + activo;
 	}
 	public IEnumerator crtCounterDown()
     {

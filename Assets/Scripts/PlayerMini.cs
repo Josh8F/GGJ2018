@@ -6,7 +6,7 @@ public class PlayerMini : MonoBehaviour {
 
 	public GameObject GameManager;
 	GameManagerMini manager;
-	public bool activo = false;
+	public bool activo = false, terminado = false;
 	// Use this for initialization
 	void Start () {
 		manager = GameManager.GetComponent<GameManagerMini>();
@@ -18,6 +18,11 @@ public class PlayerMini : MonoBehaviour {
 			if(Input.GetKeyDown(KeyCode.Space)){
 				activo = true;
 				manager.StartGame();
+			}
+		}
+		if(terminado){
+			if(Input.GetKeyDown(KeyCode.Space)){
+				manager.ChangeScene("Mini");
 			}
 		}
 	}

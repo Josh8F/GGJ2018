@@ -50,6 +50,8 @@ public class GameManagerMini : MonoBehaviour
     public void EndGame()
     {
         final.SetActive(true);
+        _PlayerController.GetComponent<ControllerMinigame>().enabled = false;
+        _PlayerController.GetComponent<PlayerMini>().terminado = true;
     }
     public void WinGame()
     {   

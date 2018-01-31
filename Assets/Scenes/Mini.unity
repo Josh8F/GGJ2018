@@ -501,7 +501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &354899690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -510,7 +510,7 @@ RectTransform:
   m_GameObject: {fileID: 354899689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.025622, y: 1.2612047, z: 1}
+  m_LocalScale: {x: 4.025622, y: 1.5648704, z: 1}
   m_Children:
   - {fileID: 425806266}
   m_Father: {fileID: 715562758}
@@ -518,7 +518,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 35}
+  m_AnchoredPosition: {x: 0, y: 36.215}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354899691
@@ -579,7 +579,7 @@ RectTransform:
   m_GameObject: {fileID: 425806265}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2655191, y: 0.739799, z: 0.3565164}
+  m_LocalScale: {x: 0.2655191, y: 0.59917897, z: 0.3565164}
   m_Children: []
   m_Father: {fileID: 354899690}
   m_RootOrder: 0
@@ -621,7 +621,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SE TE HA ACABADO EL TIEMPO
+  m_Text: 'SE TE HA ACABADO EL TIEMPO
+
+    ESPACIO PARA VOLVER A INTENTAR'
 --- !u!222 &425806268
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2128,7 +2130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1699171606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2377,6 +2379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameManager: {fileID: 326912114}
   activo: 0
+  terminado: 0
 --- !u!1 &2019805820
 GameObject:
   m_ObjectHideFlags: 0
