@@ -176,7 +176,7 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: flip
-    pixelLightCount: 4
+    pixelLightCount: 6
     shadows: 1
     shadowResolution: 1
     shadowProjection: 1
