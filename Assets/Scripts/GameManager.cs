@@ -15,11 +15,14 @@ public class GameManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource audioSourceOneShot;
     public AudioClip ac_MainSong, ac_LevelSong;
+    public Texture2D cursorTexture;
+    public Vector2 centroCursor = Vector2.zero;
 
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        Cursor.SetCursor(cursorTexture,centroCursor,CursorMode.Auto);
     }
     public void ControlPanel(GameObject obj)
     {

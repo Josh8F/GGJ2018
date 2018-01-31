@@ -533,6 +533,8 @@ MonoBehaviour:
   audioSourceOneShot: {fileID: 140905612}
   ac_MainSong: {fileID: 8300000, guid: 3e0532d1ad689264093c5491eb322938, type: 3}
   ac_LevelSong: {fileID: 8300000, guid: 5eee6c2f693a3884caee756daf19203c, type: 3}
+  cursorTexture: {fileID: 2800000, guid: 9653f341248767243bba2eb87f118ff6, type: 3}
+  centroCursor: {x: 25, y: 25}
 --- !u!4 &140905610
 Transform:
   m_ObjectHideFlags: 0
@@ -8413,7 +8415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1729704976
 MonoBehaviour:
   m_ObjectHideFlags: 0
