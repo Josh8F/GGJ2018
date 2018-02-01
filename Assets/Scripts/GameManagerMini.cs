@@ -20,7 +20,9 @@ public class GameManagerMini : MonoBehaviour
     //public GameObject btnSpace;
     //public bool canInteract = false;
 
-    
+    void Start(){
+        Cursor.visible = false;
+    }
     public void ControlPanel(GameObject obj)
     {
         obj.SetActive(!obj.activeInHierarchy);
