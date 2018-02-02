@@ -1,26 +1,48 @@
 fileFormatVersion: 2
-guid: 5daee7d72736f4145840fe9131e50529
-timeCreated: 1511457859
-licenseType: Store
+guid: 01041e71871649a40b6260545d90fde7
+timeCreated: 1517534585
+licenseType: Free
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
-    100000: Scissor red A
-    100002: Scissor red B
-    100004: //RootNode
-    400000: Scissor red A
-    400002: Scissor red B
-    400004: //RootNode
-    2300000: Scissor red A
-    2300002: Scissor red B
-    3300000: Scissor red A
-    3300002: Scissor red B
-    4300000: Scissor red B
-    4300002: Scissor red A
+    100000: //RootNode
+    100002: pCylinder10
+    100004: pCylinder11
+    100006: pCylinder12
+    100008: pCylinder7
+    100010: pCylinder8
+    100012: pCylinder9
+    100014: transform4
+    100016: transform5
+    100018: transform6
+    100020: transform7
+    100022: transform8
+    400000: //RootNode
+    400002: pCylinder10
+    400004: pCylinder11
+    400006: pCylinder12
+    400008: pCylinder7
+    400010: pCylinder8
+    400012: pCylinder9
+    400014: transform4
+    400016: transform5
+    400018: transform6
+    400020: transform7
+    400022: transform8
+    2100000: blinn3
+    2100002: blinn4
+    2300000: pCylinder12
+    2300002: //RootNode
+    3300000: pCylinder12
+    3300002: //RootNode
+    4300000: pCylinder12
+    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -33,6 +55,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -57,11 +80,13 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -86,7 +111,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

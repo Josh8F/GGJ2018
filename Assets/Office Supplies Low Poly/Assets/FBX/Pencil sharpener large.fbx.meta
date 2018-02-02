@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 8dcd4dddf1192114f84da0a9d4dd1548
-timeCreated: 1517166929
-licenseType: Pro
+guid: 64f339989f1724c42bf7625edf00f0e7
+timeCreated: 1511457859
+licenseType: Store
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     100002: Sharpener crank
@@ -13,7 +13,6 @@ ModelImporter:
     400002: Sharpener crank
     400004: Sharpener holder
     400006: Sharpener large
-    2100000: No Name
     2300000: Sharpener crank
     2300002: Sharpener holder
     2300004: Sharpener large
@@ -23,12 +22,10 @@ ModelImporter:
     4300000: Sharpener holder
     4300002: Sharpener crank
     4300004: Sharpener large
-  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -41,7 +38,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -66,13 +62,11 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
