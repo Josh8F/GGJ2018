@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
 
     public Animator animator;
+    public AudioSource audioSource;
 
 
     void Start()
@@ -34,14 +35,17 @@ public class PlayerController : MonoBehaviour
         {
             if (Vector3.Distance(transform.position, agente.destination) <= 1f)
             {
+                audioSource.Stop();
                 animator.SetBool("walk", false);
             }
+            
+
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable))
             {
                 if (Input.GetMouseButtonDown(0))
                 {
                     Instantiate(aro, hit.point + Vector3.up * alturaAro, rotacion);
-
+                    audioSource.Play();
                     {
                         animator.SetBool("walk", true);
 
