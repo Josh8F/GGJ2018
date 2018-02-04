@@ -38,14 +38,17 @@ public class PlayerController : MonoBehaviour
                 audioSource.Stop();
                 animator.SetBool("walk", false);
             }
-            
+
 
             if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, distancia, interactuable))
             {
                 if (Input.GetMouseButtonDown(0))
                 {
                     Instantiate(aro, hit.point + Vector3.up * alturaAro, rotacion);
-                    audioSource.Play();
+                    if (!audioSource.isPlaying)
+                    {
+                        audioSource.Play();
+                    }
                     {
                         animator.SetBool("walk", true);
 

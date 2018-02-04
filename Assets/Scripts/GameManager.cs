@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        Cursor.SetCursor(cursorTexture,centroCursor,CursorMode.Auto);
+        Cursor.SetCursor(cursorTexture, centroCursor, CursorMode.Auto);
     }
     public void ControlPanel(GameObject obj)
     {
@@ -70,5 +70,10 @@ public class GameManager : MonoBehaviour
     public void SceneChange(string scene)
     {
         SceneManager.LoadScene(scene);
+    }
+
+    public void ControlAudio()
+    {
+        AudioListener.volume = 1 - AudioListener.volume;
     }
 }

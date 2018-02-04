@@ -107,7 +107,7 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 1.53
+  m_Intensity: 1.23
   m_Range: 12.642264
   m_SpotAngle: 179
   m_CookieSize: 10
@@ -145,6 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minIntensity: 0.9
-  maxIntensity: 1.5
-  frequency: 0.01
+  maxIntensity: 1
+  frequency: 0.26
   phase: 0
