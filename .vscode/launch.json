@@ -6,11 +6,7 @@
 			"type":"mono",
 			"request":"attach",
 			"address":"localhost",
-<<<<<<< HEAD
 			"port":32448
-=======
-			"port":7188
->>>>>>> f47b559e554830d03113138f492ea8ae882cf652
 		}
 	]
 }
