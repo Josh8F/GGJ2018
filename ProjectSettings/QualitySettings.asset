@@ -176,7 +176,7 @@ QualitySettings:
     excludedTargetPlatforms: []
   - serializedVersion: 2
     name: flip
-    pixelLightCount: 6
+    pixelLightCount: 8
     shadows: 1
     shadowResolution: 1
     shadowProjection: 1
@@ -209,7 +209,7 @@ QualitySettings:
     PS4: 5
     PSM: 5
     PSP2: 2
-    Standalone: 5
+    Standalone: 6
     Tizen: 2
     WebGL: 6
     WiiU: 5

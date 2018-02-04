@@ -7,13 +7,15 @@ public class ItemController : MonoBehaviour
 {
 
     public GameObject itemToActive;
+    public GameObject obstacleToDisable;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             itemToActive.SetActive(true);
-            Destroy(GetComponent<AnimationTrigger>());
+            obstacleToDisable.SetActive(false);
+            Destroy(GetComponent<ItemController>());
         }
     }
 }
