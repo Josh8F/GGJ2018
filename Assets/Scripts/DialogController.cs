@@ -15,15 +15,38 @@ public class DialogController : MonoBehaviour
     public int[] dialogsToShowContinue = { };
 
     public string[] lstDialogs = {
-
-
-
         "¡Demonios, se ha ido la luz! ¡Como es posible que en empresas tan prominentes como Thunder PJ ocurran cosas asi! ",
         "¡Mi trabajo se ha estropeado! Algo debió haber pasado.",
         "Ire a buscar a Angus.",
+
 "¿Donde esta Angus? el deberia estar solucionandolo.",
 "Ya se, ire a buscarlo al area de fusibles, tal vez este ahi.",
-"Vaya... hasta la cafetería 'tres tiempos' está cerrada.",
+
+"Vaya... hasta la cafetería tres tiempos está cerrada.",
+"Solo un poco mas, ya estoy cerca de los fusibles.",
+
+"Rayos! ¿¡Que ha pasado aquí!? y esa ropa? ",
+"Por alguna razón esta bombilla brilla tres veces...",
+
+"Uniforme número “3561”…",
+"Espera ese es el uniforme de Ryan!!",
+"Pero qué diablos ha pasado aquí?",
+"Ryan?? Ire a su oficina, es la numero 5.",
+
+"Se ha abierto la cafeteria. ¿Que esta pasando aqui?",
+
+
+"El microondas esta encendido",
+"Dice algo: 3561",
+"¿Ryan? Eres tu amigo?",
+"Debo ir a su oficina.",
+
+
+"Esta cerrada, debo buscarla.",
+
+"Alfin estoy en su oficina.",
+"Su ordenador está encendido, le echare un vistazo.",
+"Alguna vez me dijo que su contraseña era 4123",
 
 
         "Algo huele raro, debo seguir adelante.",
