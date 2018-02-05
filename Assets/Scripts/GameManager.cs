@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         _PlayerController.canMove = true;
+        GameObject.Find("Puerta01").GetComponent<Animator>().SetBool("Abrir", true);
     }
 
     public void PauseGame()

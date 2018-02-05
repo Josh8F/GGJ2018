@@ -14,7 +14,7 @@ public class ItemController : MonoBehaviour
         if (other.tag == "Player")
         {
             itemToActive.SetActive(true);
-            obstacleToDisable.SetActive(false);
+            obstacleToDisable.GetComponent<Animator>().SetBool("Abrir", true);
             Destroy(GetComponent<ItemController>());
         }
     }
