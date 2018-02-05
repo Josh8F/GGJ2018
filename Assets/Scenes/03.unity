@@ -3082,7 +3082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497805250}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &433454144 stripped
 Transform:
@@ -7776,117 +7776,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4823117624122674, guid: 0e9e5eaa7b1e13143a1ac2cff9809075,
     type: 2}
   m_PrefabInternal: {fileID: 1081970782}
---- !u!1 &1084598239
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1084598242}
-  - component: {fileID: 1084598241}
-  - component: {fileID: 1084598240}
-  - component: {fileID: 1084598243}
-  m_Layer: 0
-  m_Name: Dialogo_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1084598240
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084598239}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 3d2b7242139adbc4886d37b4fcfdf7e1, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1084598241
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084598239}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5.59, y: 5, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1084598242
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084598239}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -10.289336, y: -2.8049219, z: -9.039844}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1497805250}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1084598243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1084598239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txtDialog: {fileID: 798123440}
-  imgObj: {fileID: 1789059456}
-  timeToDisappear: 5
-  canAppear: 1
-  dialogsToShowContinue: 
-  lstDialogs:
-  - "\xA1Demonios! \xA1En empresas tan prominentes no se deber\xEDa ir la luz de esta
-    forma! \xA1Mi trabajo est\xE1 ido! Algo debi\xF3 haber pasado."
-  - Algo huele raro, debo seguir adelante.
-  - "Uniforme n\xFAmero \u201C3561\u201D\u2026-dijo consternado, Ryan-\xBFPero qu\xE9
-    diablos ha pasado aqu\xED?"
-  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
-  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
-    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
-    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
-  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
-    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
-    menor.\u201D"
-  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
-  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
-    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
-    de mandarlo con su familia!"
-  - Gracias, amigo. Eres, en verdad, una gran persona.
 --- !u!1001 &1104404516
 Prefab:
   m_ObjectHideFlags: 0
@@ -10714,9 +10603,10 @@ Transform:
   - {fileID: 989988335}
   - {fileID: 2128034430}
   - {fileID: 1243037086}
-  - {fileID: 1084598242}
   - {fileID: 1741132073}
   - {fileID: 433330570}
+  - {fileID: 2036467130}
+  - {fileID: 1727272340}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12112,6 +12002,164 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d645fcb4b19adaa4da1d7afcea85daaf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1727272339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1727272340}
+  - component: {fileID: 1727272345}
+  - component: {fileID: 1727272344}
+  - component: {fileID: 1727272343}
+  - component: {fileID: 1727272342}
+  - component: {fileID: 1727272341}
+  m_Layer: 0
+  m_Name: Dialogo_14-17
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1727272340
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727272339}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.01, y: -2.8049219, z: -1.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1497805250}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727272341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727272339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a27b860adbfc9743a6560a6022acad2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animationToPlay: pickup
+--- !u!114 &1727272342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727272339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebdc4af84d680c4e973348218e699cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemToActive: {fileID: 0}
+  obstacleToDisable: {fileID: 0}
+--- !u!114 &1727272343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727272339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  imgObj: {fileID: 1789059456}
+  timeToDisappear: 4
+  canAppear: 1
+  dialogsToShowContinue: 0e0000000f0000001000000011000000
+  lstDialogs:
+  - "\xA1Demonios, se ha ido la luz! \xA1Como es posible que en empresas tan prominentes
+    como Thunder PJ ocurran cosas asi! "
+  - "\xA1Mi trabajo se ha estropeado! Algo debi\xF3 haber pasado."
+  - Ire a buscar a Angus.
+  - "\xBFDonde esta Angus? el deberia estar solucionandolo."
+  - Ya se, ire a buscarlo al area de fusibles, tal vez este ahi.
+  - "Vaya... hasta la cafeter\xEDa tres tiempos est\xE1 cerrada."
+  - Solo un poco mas, ya estoy cerca de los fusibles.
+  - "Rayos! \xBF\xA1Que ha pasado aqu\xED!? y esa ropa? "
+  - "Por alguna raz\xF3n esta bombilla brilla tres veces..."
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026"
+  - Espera ese es el uniforme de Ryan!!
+  - "Pero qu\xE9 diablos ha pasado aqu\xED?"
+  - Ryan?? Ire a su oficina, es la numero 5.
+  - "Se ha abierto la cafeteria. \xBFQue esta pasando aqui?"
+  - El microondas esta encendido
+  - 'Dice algo: 3561'
+  - "\xBFRyan? Eres tu amigo?"
+  - Debo ir a su oficina.
+  - Esta cerrada, debo buscarla.
+  - Alfin estoy en su oficina.
+  - "Su ordenador est\xE1 encendido, le echare un vistazo."
+  - "Alguna vez me dijo que su contrase\xF1a era 4123"
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026 \xBFPero qu\xE9 diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
+--- !u!23 &1727272344
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727272339}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &1727272345
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1727272339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1727711956
 GameObject:
   m_ObjectHideFlags: 0
@@ -12264,7 +12312,7 @@ GameObject:
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1741132071
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12322,7 +12370,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1497805250}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1741132074
 MonoBehaviour:
@@ -13499,6 +13547,137 @@ Transform:
   m_Father: {fileID: 619469962}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036467129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2036467130}
+  - component: {fileID: 2036467133}
+  - component: {fileID: 2036467132}
+  - component: {fileID: 2036467131}
+  m_Layer: 0
+  m_Name: Dialogo_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2036467130
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036467129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.01, y: -2.8049219, z: -5.94}
+  m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_Children: []
+  m_Father: {fileID: 1497805250}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2036467131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036467129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662825cf2319b7c42931a45839f7073f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  txtDialog: {fileID: 798123440}
+  imgObj: {fileID: 1789059456}
+  timeToDisappear: 4
+  canAppear: 1
+  dialogsToShowContinue: 0d000000
+  lstDialogs:
+  - "\xA1Demonios, se ha ido la luz! \xA1Como es posible que en empresas tan prominentes
+    como Thunder PJ ocurran cosas asi! "
+  - "\xA1Mi trabajo se ha estropeado! Algo debi\xF3 haber pasado."
+  - Ire a buscar a Angus.
+  - "\xBFDonde esta Angus? el deberia estar solucionandolo."
+  - Ya se, ire a buscarlo al area de fusibles, tal vez este ahi.
+  - "Vaya... hasta la cafeter\xEDa tres tiempos est\xE1 cerrada."
+  - Solo un poco mas, ya estoy cerca de los fusibles.
+  - "Rayos! \xBF\xA1Que ha pasado aqu\xED!? y esa ropa? "
+  - "Por alguna raz\xF3n esta bombilla brilla tres veces..."
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026"
+  - Espera ese es el uniforme de Ryan!!
+  - "Pero qu\xE9 diablos ha pasado aqu\xED?"
+  - Ryan?? Ire a su oficina, es la numero 5.
+  - "Se ha abierto la cafeteria. \xBFQue esta pasando aqui?"
+  - El microondas esta encendido
+  - 'Dice algo: 3561'
+  - "\xBFRyan? Eres tu amigo?"
+  - Debo ir a su oficina.
+  - Esta cerrada, debo buscarla.
+  - Alfin estoy en su oficina.
+  - "Su ordenador est\xE1 encendido, le echare un vistazo."
+  - "Alguna vez me dijo que su contrase\xF1a era 4123"
+  - Algo huele raro, debo seguir adelante.
+  - "Uniforme n\xFAmero \u201C3561\u201D\u2026 \xBFPero qu\xE9 diablos ha pasado aqu\xED?"
+  - "Tres veces indica el n\xFAmero tres, deber\xEDa buscar algo relacionado a eso."
+  - "Recuerdo haber visto esos n\xFAmeros hace un momento. \xA1Es cierto! \xA1El uniforme
+    chamuscado ten\xEDa los n\xFAmeros \u201C3561\u201D inscritos en \xE9l! Recuerdo
+    que Angus vest\xEDa ese uniforme. Tambi\xE9n recuerdo que su oficina era la 5."
+  - "\u201CD\xEDa 27/01/2018, hoy se ha sido asignado verificar el estado de la caja
+    de electricidad. Se dice que ha estado inestable, pero de seguro es un problema
+    menor.\u201D"
+  - "\xA1Padre Santo! \xA1Este lugar ha de estar embrujado!"
+  - "Deber\xEDa avisarle a alguien\u2026 Pero quisiera cumplir con los anhelos de
+    mi compa\xF1ero primero. \xA1S\xED! \xA1Yo he de desactivar ese Firewall! \xA1He
+    de mandarlo con su familia!"
+  - Gracias, amigo. Eres, en verdad, una gran persona.
+--- !u!23 &2036467132
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036467129}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &2036467133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036467129}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2079055884
 Prefab:
   m_ObjectHideFlags: 0
