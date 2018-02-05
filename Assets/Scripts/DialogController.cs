@@ -22,7 +22,7 @@ public class DialogController : MonoBehaviour
 "¿Donde está Angus? Él deberia estar solucionándolo.",
 "Ya sé, iré a buscarlo al área de fusibles, tal vez esté ahi.",
 
-"Vaya... la cafetería tres tiempos está cerrada.",
+"Vaya... la ~Cafetería Los Tres Tiempos~ está cerrada.",
 "Solo un poco mas, ya estoy cerca de los fusibles.",
 
 "¡Rayos! ¿¡Que ha pasado aquí!? ¿De quién esa ropa? ",
