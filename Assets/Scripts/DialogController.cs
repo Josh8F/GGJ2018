@@ -15,38 +15,38 @@ public class DialogController : MonoBehaviour
     public int[] dialogsToShowContinue = { };
 
     public string[] lstDialogs = {
-        "¡Demonios, se ha ido la luz! ¡Como es posible que en empresas tan prominentes como Thunder PJ ocurran cosas asi! ",
+        "¡Demonios, se ha ido la luz! ¡¿Cómo es posible que en empresas tan prominentes como Thunder PJ ocurran cosas asi?! ",
         "¡Mi trabajo se ha estropeado! Algo debió haber pasado.",
         "Ire a buscar a Angus.",
 
-"¿Donde esta Angus? el deberia estar solucionandolo.",
-"Ya se, ire a buscarlo al area de fusibles, tal vez este ahi.",
+"¿Donde está Angus? Él deberia estar solucionándolo.",
+"Ya sé, iré a buscarlo al área de fusibles, tal vez esté ahi.",
 
-"Vaya... hasta la cafetería tres tiempos está cerrada.",
+"Vaya... la cafetería tres tiempos está cerrada.",
 "Solo un poco mas, ya estoy cerca de los fusibles.",
 
-"Rayos! ¿¡Que ha pasado aquí!? y esa ropa? ",
-"Por alguna razón esta bombilla brilla tres veces...",
+"¡Rayos! ¿¡Que ha pasado aquí!? ¿De quién esa ropa? ",
+"Qué extraño... Por alguna razón esta bombilla brilla tres veces...",
 
 "Uniforme número “3561”…",
-"Espera ese es el uniforme de Ryan!!",
-"Pero qué diablos ha pasado aquí?",
-"Ryan?? Ire a su oficina, es la numero 5.",
+"Espera... ¡ese es el uniforme de Ryan!",
+"¿Pero qué diablos ha pasado aquí?",
+"¿Ryan? Ire a su oficina, es la numero 5.",
 
-"Se ha abierto la cafeteria. ¿Que esta pasando aqui?",
+"Se ha abierto la cafeteria. ¿Qué está pasando aquí?",
 
 
 "El microondas esta encendido",
 "Dice algo: 3561",
-"¿Ryan? Eres tu amigo?",
+"¿Ryan? ¿Eres tú amigo?",
 "Debo ir a su oficina.",
 
 
-"Esta cerrada, debo buscarla.",
+"Está cerrada, debo buscarla.",
 
-"Alfin estoy en su oficina.",
-"Su ordenador está encendido, le echare un vistazo.",
-"Alguna vez me dijo que su contraseña era 4123",
+"Al fin estoy en su oficina.",
+"Su ordenador está encendido, le echaré un vistazo.",
+"Recuerdo que una vez me dijo que su contraseña era 4123",
 
 
         "Algo huele raro, debo seguir adelante.",
