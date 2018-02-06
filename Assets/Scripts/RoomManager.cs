@@ -14,13 +14,12 @@ public class RoomManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
