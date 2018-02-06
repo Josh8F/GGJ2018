@@ -2492,6 +2492,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 351395003}
+  - component: {fileID: 351395005}
+  - component: {fileID: 351395004}
   m_Layer: 0
   m_Name: 06-End
   m_TagString: Untagged
@@ -2521,6 +2523,31 @@ Transform:
   m_Father: {fileID: 147584206}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &351395004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 351395002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952c42c2a9ecb7b4c8b527121734428c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strPlace: Oficina de Angus
+  txtPlace: {fileID: 944900732}
+--- !u!65 &351395005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 351395002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: 0, z: -0.58}
 --- !u!1001 &352175378
 Prefab:
   m_ObjectHideFlags: 0
@@ -2590,7 +2617,7 @@ GameObject:
   - component: {fileID: 392823030}
   - component: {fileID: 392823029}
   m_Layer: 0
-  m_Name: 03
+  m_Name: 03-Fusibles
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2643,7 +2670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952c42c2a9ecb7b4c8b527121734428c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strPlace: Oficina de ryan
+  strPlace: Area de fusibles
   txtPlace: {fileID: 944900732}
 --- !u!1001 &394500080
 Prefab:
@@ -4263,7 +4290,7 @@ GameObject:
   - component: {fileID: 619469964}
   - component: {fileID: 619469963}
   m_Layer: 0
-  m_Name: 04
+  m_Name: 04-Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4304,7 +4331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952c42c2a9ecb7b4c8b527121734428c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strPlace: Comedor Tres tiempos
+  strPlace: Comedor Tres Tiempos
   txtPlace: {fileID: 944900732}
 --- !u!65 &619469964
 BoxCollider:
@@ -8809,7 +8836,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 5, z: 1}
+  m_Size: {x: 10, y: 2, z: 3.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1268289992
 Prefab:
@@ -9823,7 +9850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 952c42c2a9ecb7b4c8b527121734428c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strPlace: Oficina de ryan
+  strPlace: Oficina de Ryan
   txtPlace: {fileID: 944900732}
 --- !u!1001 &1369814909
 Prefab:
@@ -14002,7 +14029,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2128034429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.95, y: -2.8049219, z: 3.73}
+  m_LocalPosition: {x: -43.95, y: -2.8049219, z: 6.47}
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 1497805250}
@@ -14118,5 +14145,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 5, z: 1}
+  m_Size: {x: 10, y: 5, z: 5}
   m_Center: {x: 0, y: 0, z: 0}

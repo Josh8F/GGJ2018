@@ -7,20 +7,19 @@ public class AnimationTrigger : MonoBehaviour
 
     public string animationToPlay;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
-            other.gameObject.GetComponentInChildren<Animator>().SetBool(animationToPlay, true);
+            StartCoroutine(PlayAnimation(other.gameObject));
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            other.gameObject.GetComponentInChildren<Animator>().SetBool(animationToPlay, false);
-            //Destroy(GetComponent<AnimationTrigger>());
-        }
 
+    IEnumerator PlayAnimation(GameObject go)
+    {
+        go.GetComponentInChildren<Animator>().SetBool(animationToPlay, true);
+        yield return new WaitForSeconds(1.5f);
+        go.GetComponentInChildren<Animator>().SetBool(animationToPlay, false);
     }
 }
