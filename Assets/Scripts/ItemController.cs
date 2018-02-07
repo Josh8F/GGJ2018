@@ -7,14 +7,12 @@ public class ItemController : MonoBehaviour
 {
 
     public GameObject itemToActive;
-    public GameObject obstacleToDisable;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
             itemToActive.SetActive(true);
-            obstacleToDisable.GetComponent<Animator>().SetBool("Abrir", true);
             Destroy(GetComponent<ItemController>());
         }
     }
