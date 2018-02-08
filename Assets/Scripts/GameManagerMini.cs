@@ -15,7 +15,7 @@ public class GameManagerMini : MonoBehaviour
 
     Coroutine crt;
     int i = 0;
-    string[] letras = {"E","R","E","S", " ", "U","N"," ","B","U","E","N"," ", "A", "M", "I","G","O","."};
+    public string[] letrasFinales;
 
     //public GameObject btnSpace;
     //public bool canInteract = false;
@@ -62,15 +62,13 @@ public class GameManagerMini : MonoBehaviour
     }
 
     public IEnumerator escribir(){
-        while(true){
-            if(i < letras.Length){
-                textoFinal.text += letras[i];
-                i++;
-                yield return new WaitForSeconds(0.2f);
-            }else{
-                yield return new WaitForSeconds(2f);
-                ChangeScene("credits");
+        foreach(string texto in letrasFinales){
+            for (int i = 0; i < texto.Length; i++){
+                textoFinal.text += texto.Substring(i,1);
+                yield return new WaitForSeconds(0.15f);
             }
+            yield return new WaitForSeconds(0.6f);
+            textoFinal.text = "";
         }
     }
 }
