@@ -14,12 +14,17 @@ public class DoorController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if(other.tag == "Player"){
-			if(llave.activeSelf){
-				animador.SetBool("Abrir", true);
+			if(llave != null){
+				if(llave.activeSelf){
+					animador.SetBool("Abrir", true);
+				}else{
+					//Mostrar mensaje de que necesita llave
+					Debug.Log("no hay llave");
+				}
 			}else{
-				//Mostrar mensaje de que necesita llave
-				Debug.Log("no hay llave");
+				animador.SetBool("Abrir", true);
 			}
+			Destroy(this);
 		}
 	}
 }
