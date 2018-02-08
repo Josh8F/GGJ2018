@@ -33,3 +33,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+.vscode/launch.json
+.vscode/launch.json

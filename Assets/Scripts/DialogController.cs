@@ -14,7 +14,7 @@ public class DialogController : MonoBehaviour
 
     public int[] dialogsToShowContinue = { };
 
-    public string[] lstDialogs = {
+    string[] lstDialogs = {
         "¡Demonios, se ha ido la luz! me la paso trabajando como esclavo en esta empresa como para que pasen estas cosas.",
         "¡Mi trabajo se ha estropeado! Algo debió haber pasado.",
         "Ire a buscar a Angus.",
