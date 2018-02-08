@@ -3186,6 +3186,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &224209224
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4040,6 +4043,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 37014040}
+  imgObj: {fileID: 1789059456}
+  txtDialog: {fileID: 798123440}
+  timeToDisappear: 4
 --- !u!65 &317721083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4852,6 +4858,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &405708032
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7580,6 +7589,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &619267860
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9128,6 +9140,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &717882169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9716,6 +9731,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &750776653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12463,7 +12481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 135, y: 200}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &944900732
@@ -12977,6 +12995,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &966609535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16253,6 +16274,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &1221383741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18372,6 +18396,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 419764621}
+  imgObj: {fileID: 1789059456}
+  txtDialog: {fileID: 798123440}
+  timeToDisappear: 4
 --- !u!1001 &1373410098
 Prefab:
   m_ObjectHideFlags: 0
@@ -21419,6 +21446,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 0}
+  imgObj: {fileID: 0}
+  txtDialog: {fileID: 0}
+  timeToDisappear: 0
 --- !u!65 &1589642358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24387,6 +24417,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   llave: {fileID: 223214897}
+  imgObj: {fileID: 1789059456}
+  txtDialog: {fileID: 798123440}
+  timeToDisappear: 4
 --- !u!65 &1898173576
 BoxCollider:
   m_ObjectHideFlags: 0
