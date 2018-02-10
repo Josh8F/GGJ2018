@@ -70,5 +70,7 @@ public class GameManagerMini : MonoBehaviour
             yield return new WaitForSeconds(0.6f);
             textoFinal.text = "";
         }
+        yield return new WaitForSeconds(1f);
+        ChangeScene("credits");
     }
 }
